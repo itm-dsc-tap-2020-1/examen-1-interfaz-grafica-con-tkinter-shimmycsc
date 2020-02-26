@@ -5,7 +5,7 @@ from tkinter import messagebox as mBox
 def calif():
     calif= 0
     if(uno.get()=="Bill Gates"):
-        calif+=20
+        calif+=20   
     if(dos.get()=="Python"):
         calif+=20
     if(op03.get()==2):
@@ -15,7 +15,7 @@ def calif():
     if(op2.get()==1 or op4.get()==1 or op5.get()==1):
         print("")
     else:
-        if(op1.get()!=0 and op3.get()!=0):
+        if(op1.get()!=0 or op3.get()!=0):
             calif+=20
     mBox.showinfo("Calificación","Tu calificación es " + str(calif))
 
