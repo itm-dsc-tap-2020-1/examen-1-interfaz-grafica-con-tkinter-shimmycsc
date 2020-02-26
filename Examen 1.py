@@ -12,7 +12,11 @@ def calif():
         calif+=20
     if(op04.get==3):
         calif+=20     
-    mBox.showinfo("Calificación","Tu calificación es " + calif)
+    if(op2.get==1 or op4.get==1 or op5.get==1):
+        print("")
+    else:
+        calif+=20
+    mBox.showinfo("Calificación","Tu calificación es " + str(calif))
 
 ventana=tk.Tk()
 ventana.title("Examen de Computación")
